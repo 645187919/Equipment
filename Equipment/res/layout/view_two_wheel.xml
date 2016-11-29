@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/background_time_picker_top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textColor="@android:color/black" android:id="@id/button_two_wheel_commit" android:background="@drawable/button_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/background_time_picker_middle" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip">
+            <kankan.wheel.widget.WheelView android:layout_gravity="center_vertical" android:id="@id/wheel_hour" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <kankan.wheel.widget.WheelView android:layout_gravity="center_vertical" android:id="@id/wheel_minute" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

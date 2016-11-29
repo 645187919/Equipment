@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">20.0dip</dimen>
+    <dimen name="progress_daily_value_size">23.0dip</dimen>
+    <dimen name="progress_text_size">10.0dip</dimen>
+    <dimen name="progress_text_size_bigger">12.0dip</dimen>
+    <dimen name="progress_daily_value_size_bigger">25.0dip</dimen>
+    <dimen name="activity_text_size">15.0dip</dimen>
+    <dimen name="activity_text_size_small">10.0dip</dimen>
+    <dimen name="activity_text_size_bigger">22.0dip</dimen>
+    <dimen name="activity_text_size_bigger_2">25.0dip</dimen>
+    <dimen name="activity_value_size_bigger">32.0dip</dimen>
+    <dimen name="activity_tab_text_size">11.0dip</dimen>
+    <dimen name="bluetooth_text_sync">40.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_horizontal_margin_left">22.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="pie_segment_label_font_size">10.0dip</dimen>
+    <dimen name="title_font_size">20.0dip</dimen>
+    <dimen name="domain_label_font_size">13.0dip</dimen>
+    <dimen name="range_label_font_size">13.0dip</dimen>
+    <dimen name="range_tick_label_font_size">15.0dip</dimen>
+    <dimen name="domain_tick_label_font_size">15.0dip</dimen>
+    <dimen name="legend_text_font_size">20.0dip</dimen>
+    <dimen name="tab_height">60.0dip</dimen>
+    <dimen name="fragment_gap">70.0dip</dimen>
+</resources>

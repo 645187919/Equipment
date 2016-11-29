@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_setting" >
+
+    <RelativeLayout
+        android:id="@id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_main_top" >
+
+        <ImageView
+            android:id="@id/image_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/image_title_logo" />
+
+        <TextView
+            android:id="@id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/Workout_Goal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_title"
+        android:layout_marginBottom="@dimen/tab_height" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/text_set_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/Set_Goals"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@id/text_label_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Steps_"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <Button
+                    android:id="@id/button_step"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_goal"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@id/text_label_burn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Calories_"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <Button
+                    android:id="@id/button_burn"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_goal"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@id/text_label_sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Sleep_"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <Button
+                    android:id="@id/button_sleep"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_goal"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/text_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/goal_notice"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@id/button_reset_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/button_profile"
+                android:gravity="center"
+                android:text="@string/RESET_ALL"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/text_reset_introduction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/reset_introduction_1"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/text_reset_introduction_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/reset_introduction_2"
+                android:textColor="@color/color_light_blue"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginTop="10.0dip" >
+
+                <Button
+                    android:id="@id/button_back"
+                    android:layout_width="38.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_back" />
+
+                <Button
+                    android:id="@id/button_save"
+                    android:layout_width="90.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_save"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+   
+
+</RelativeLayout>

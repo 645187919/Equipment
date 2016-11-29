@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_setting" >
+
+    <RelativeLayout
+        android:id="@id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_main_top" >
+
+        <ImageView
+            android:id="@id/image_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/image_title_logo" />
+
+        <TextView
+            android:id="@id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/Smart_Alarm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/view_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_title"
+        android:layout_marginBottom="@dimen/tab_height" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_alarm"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_wake_up_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/Wake_Up_Alarm"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_label_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/Alarm_Clock"
+                        android:textColor="@android:color/white" />
+
+                    <ToggleButton
+                        android:id="@id/button_alarm_switch"
+                        android:layout_width="50.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/button_switch_selector"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_label_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/Alarm_Time"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@id/text_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/value7"
+                        android:textColor="@color/color_light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@id/text_label_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/Monitoring_period"
+                        android:textColor="@android:color/black"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@id/text_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/value8"
+                        android:textColor="@color/color_light_blue"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/background_alarm"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_exercise_alarm_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/Exercise_Alarm_1"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_label_clock_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/Alarm_Clock"
+                        android:textColor="@android:color/white" />
+
+                    <ToggleButton
+                        android:id="@id/button_alarm_switch_1"
+                        android:layout_width="50.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/button_switch_selector"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_label_time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/Alarm_Time"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@id/text_time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/value7"
+                        android:textColor="@color/color_light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@id/text_label_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/Monitoring_period"
+                        android:textColor="@android:color/black"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@id/text_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/value8"
+                        android:textColor="@color/color_light_blue"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/background_alarm"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_exercise_alarm_clock_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/Exercise_Alarm_2"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_label_clock_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/Alarm_Clock"
+                        android:textColor="@android:color/white" />
+
+                    <ToggleButton
+                        android:id="@id/button_alarm_switch_2"
+                        android:layout_width="50.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/button_switch_selector"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@id/text_label_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/Alarm_Time"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@id/text_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/value7"
+                        android:textColor="@color/color_light_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@id/text_label_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/Monitoring_period"
+                        android:textColor="@android:color/black"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@id/text_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/value8"
+                        android:textColor="@color/color_light_blue"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ToggleButton
+                    android:id="@id/button_mon"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_mon_selector"
+                    android:text="@string/MON"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/MON"
+                    android:textOn="@string/MON" />
+
+                <ToggleButton
+                    android:id="@id/button_tue"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_tue_selector"
+                    android:text="@string/TUE"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/TUE"
+                    android:textOn="@string/TUE" />
+
+                <ToggleButton
+                    android:id="@id/button_wed"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_tue_selector"
+                    android:text="@string/WED"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/WED"
+                    android:textOn="@string/WED" />
+
+                <ToggleButton
+                    android:id="@id/button_thu"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_tue_selector"
+                    android:text="@string/THU"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/THU"
+                    android:textOn="@string/THU" />
+
+                <ToggleButton
+                    android:id="@id/button_fri"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_tue_selector"
+                    android:text="@string/FRI"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/FRI"
+                    android:textOn="@string/FRI" />
+
+                <ToggleButton
+                    android:id="@id/button_sat"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_tue_selector"
+                    android:text="@string/SAT"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/SAT"
+                    android:textOn="@string/SAT" />
+
+                <ToggleButton
+                    android:id="@id/button_sun"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_date_sun_selector"
+                    android:text="@string/SUN"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/SUN"
+                    android:textOn="@string/SUN" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginTop="30.0dip" >
+
+                <Button
+                    android:id="@id/button_back"
+                    android:layout_width="38.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_back" />
+
+                <Button
+                    android:id="@id/button_save"
+                    android:layout_width="90.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_save"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</RelativeLayout>

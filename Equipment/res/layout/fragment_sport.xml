@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/balloon" >
+       
+    
+    <Button 
+        android:id="@+id/button_SportRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始运动"
+        android:textSize="30dp"
+        android:textColor="#F6F6F6"
+        android:layout_gravity="center"
+        android:background="@drawable/wenben_backgroud"
+        />
+    <Button 
+        
+        android:id="@+id/button_xinlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="心率测试"
+        android:textSize="30dp"
+        android:textColor="#F6F6F6"
+        android:layout_gravity="center"
+        android:background="@drawable/wenben_backgroud"
+        />
+    
+  
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_setting" >
+
+    
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_title"
+        android:layout_marginBottom="@dimen/tab_height" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_profile"
+                android:layout_width="312.0dip"
+                android:layout_height="65.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/background_settings_item" >
+
+                <ImageView
+                    android:id="@id/image_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/image_settings_profile" />
+
+                <ImageView
+                    android:id="@id/image_profile_arrow"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_right_arrow" />
+
+                <TextView
+                    android:id="@id/text_profile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_profile_arrow"
+                    android:layout_toRightOf="@id/image_profile"
+                    android:gravity="center_horizontal"
+                    android:text="@string/My_Profile"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/layout_goal"
+                android:layout_width="312.0dip"
+                android:layout_height="65.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/background_settings_item" >
+
+                <ImageView
+                    android:id="@id/image_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/image_settings_goal" />
+
+                <ImageView
+                    android:id="@id/image_goal_arrow"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_right_arrow" />
+
+                <TextView
+                    android:id="@id/text_goal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_goal_arrow"
+                    android:layout_toRightOf="@id/image_goal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Workout_Goal"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/layout_alarm"
+                android:layout_width="312.0dip"
+                android:layout_height="65.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/background_settings_item" >
+
+                <ImageView
+                    android:id="@id/image_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/image_settings_alarm" />
+
+                <ImageView
+                    android:id="@id/image_alarm_arrow"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_right_arrow" />
+
+                <TextView
+                    android:id="@id/text_alarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_alarm_arrow"
+                    android:layout_toRightOf="@id/image_alarm"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Smart_Alarm"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+           
+
+           
+            <RelativeLayout
+                android:id="@id/layout_about_us"
+                android:layout_width="312.0dip"
+                android:layout_height="65.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/background_settings_item" >
+
+                <ImageView
+                    android:id="@id/image_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/image_settings_about_us" />
+
+                <ImageView
+                    android:id="@id/image_about_us_arrow"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_right_arrow" />
+
+                <TextView
+                    android:id="@id/text_about_us"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image_about_us_arrow"
+                    android:layout_toRightOf="@id/image_about_us"
+                    android:gravity="center_horizontal"
+                    android:text="@string/About_Us"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+           </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+                 

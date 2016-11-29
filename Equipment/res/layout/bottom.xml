@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="@drawable/background_main_bottom"
+    
+     >
+    <LinearLayout 
+         android:id="@+id/id_tab_yundong"
+         android:layout_width="0dp"
+         android:layout_height="55dp"
+         android:orientation="vertical"
+         android:layout_weight="1"
+         android:gravity="center"
+         
+         
+        >
+        <ImageButton 
+            android:id="@+id/id_tab_yundong_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_steps_select"
+            android:clickable="false"
+            android:background="#00000000"
+            
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+        
+    </LinearLayout>
+    <!-- 第二个按钮：start -->
+   
+    <!-- 第二个按钮结束 -->
+    <!-- 第三个按钮：start -->
+    <LinearLayout
+        android:id="@+id/id_tab_dingwei"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        
+         
+        
+        >
+        <ImageButton 
+            android:id="@+id/id_tab_dingwei_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:src="@drawable/ic_distance_normal"
+            android:background="#00000000"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"
+            android:textColor="#ffffff"
+            
+            />
+        
+    </LinearLayout>
+<!-- 第三个按钮结束 -->
+ 
+<LinearLayout 
+    android:id="@+id/id_tab_setting"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_weight="1"
+    
+    >
+    <ImageButton 
+        android:id="@+id/id_tab_setting_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_settings_normal"
+        android:clickable="false"
+        android:background="#00000000"
+        
+        
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="设置"
+   android:textColor="#ffffff"
+   
+        />
+    
+</LinearLayout>
+</LinearLayout>
